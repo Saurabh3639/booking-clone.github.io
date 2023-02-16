@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking.com Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <h4>Booking.com</h4>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Hotels</a></li>
+                <li><a href="#">Flights</a></li>
+                <li><a href="#">Packages</a></li>
+                <li><a href="#">Destinations</a></li>
+            </ul>
+        </nav>
+        <form>
+            <input type="text" placeholder="Search Locations" id="location">
+            <button type="button" onclick="searchLocations()">Search</button>
+        </form>
+        <div>
+            <button>Sign In</button>
+            <button>Sign Up</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="location-section">
+            <h2>Top Locations in Your Destination</h2>
+            <div id="displayresults"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="footer-links">
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+        <div id="footer-copyright">
+            Copyright &copy; 2023 Booking.com
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
